@@ -1,5 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.ArrayList;
+
 import people.Guest;
 import rooms.Bedroom;
 import rooms.RoomType;
@@ -20,4 +23,25 @@ public class BedroomTest {
     public void hasCapacity(){
         assertEquals(2, bedroom.getCapacity());
     }
+
+    @Test
+    public void hasRoomType(){
+        assertEquals(RoomType.DOUBLE, bedroom.getRoomType());
+    }
+
+    @Test
+    public void checkRoomIsEmpty(){
+        assertEquals(true, bedroom.isEmpty());
+    }
+
+    @Test
+    public void hasCollectionOfGuests(){
+        assertEquals(new ArrayList<Guest>(), bedroom.getCollectionOfGuests());
+    }
+
+    @Test
+    public void hasRoomNumber(){
+        assertEquals(12, bedroom.getRoomNumber());
+    }
+
 }

@@ -27,4 +27,13 @@ public abstract class Room {
     public ArrayList<Guest> getCollectionOfGuests() {
         return this.collectionOfGuests;
     }
+
+    public boolean isEmpty() {
+        if (this.collectionOfGuests.size() == 0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
