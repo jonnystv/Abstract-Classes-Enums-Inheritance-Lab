@@ -28,4 +28,20 @@ public class Hotel {
     public ArrayList<ConferenceRoom> getConfRooms() {
         return this.confRooms;
     }
+
+    public void addBedroom(Bedroom bedroom){
+        this.bedrooms.add(bedroom);
+    }
+
+    public void addConferenceRoom(ConferenceRoom conferenceRoom){
+        this.confRooms.add(conferenceRoom);
+    }
+
+    public int getBedroomCount() {
+        return this.bedrooms.size();
+    }
+
+    public int getConferenceRoomCount() {
+        return this.confRooms.size();
+    }
 }

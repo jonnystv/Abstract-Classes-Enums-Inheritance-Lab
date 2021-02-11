@@ -36,4 +36,16 @@ public abstract class Room {
             return false;
         }
     }
+
+    public void addGuest(Guest guest){
+         this.collectionOfGuests.add(guest);
+    }
+
+    public void removeGuest(Guest guest){
+        this.collectionOfGuests.remove(guest);
+    }
+
+    public int guestCount(){
+        return this.collectionOfGuests.size();
+    }
 }
